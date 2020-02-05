@@ -40,19 +40,9 @@ bl_info = {
     "tracker_url": "",      
     "category": "3D View"}
     
-classes = (Buttom_Create_PT_Dome_Light, Painel_UI_Dome_Light, OBJECT_OT_custompath, WORLD_OT_remove_unused_images)
+classes = (BUTTON_PT_Create_Dome_Light, PAINEL_UI_Dome_Light, OBJECT_OT_custompath, WORLD_OT_remove_unused_images)
 
-def register():
-    
-    from bpy.utils import register_class
-    for cls in classes:
-        register_class(cls)
-        
-def unregister():
-    
-    from bpy.utils import unregister_class
-    for cls in reversed(classes):
-        unregister_class(cls)
+register, unregister = bpy.utils.register_classes_factory(classes)
 
 if __name__ == "__main__":
     register()

@@ -136,7 +136,7 @@ def Verify_World_Nodes():
         return 'Fix'      
 
 #CLASS CREATE DOME LIGHT            
-class Buttom_Create_PT_Dome_Light(bpy.types.Operator):
+class BUTTON_PT_Create_Dome_Light(bpy.types.Operator):
     bl_idname = "view3d.domelight"
     bl_label = "buttom teste"
     bl_description = "Create Dome Light"
@@ -193,8 +193,8 @@ class OBJECT_OT_custompath(bpy.types.Operator):
         return {'RUNNING_MODAL'} 
 
 #PAINEL INFO
-class Painel_UI_Dome_Light(bpy.types.Panel) :
-    bl_idname = "Buttom_Create_PT_Dome_Light"
+class PAINEL_UI_Dome_Light(bpy.types.Panel) :
+    bl_idname = "BUTTON_PT_Create_Dome_Light"
     bl_label = "Dome Light"
     bl_category = "Dome Light"
     bl_space_type = "VIEW_3D"
