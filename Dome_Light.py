@@ -138,7 +138,7 @@ def Verify_World_Nodes():
 #CLASS CREATE DOME LIGHT            
 class BUTTON_PT_Create_Dome_Light(bpy.types.Operator):
     bl_idname = "view3d.domelight"
-    bl_label = "buttom teste"
+    bl_label = "FIX DOME LIGHT"
     bl_description = "Create Dome Light"
     
     def execute(self, context):
